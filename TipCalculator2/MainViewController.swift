@@ -146,6 +146,17 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         }))
         self.present(alert, animated: true, completion: nil)
     }
+    
+    
+    @IBAction func returnBarPressed(_ sender: UIBarButtonItem) {
+        guard navigationController?.popToRootViewController(animated: true) != nil
+            else {
+                print("error")
+                return
+        }
+    }
+    
+    
 }
 
 

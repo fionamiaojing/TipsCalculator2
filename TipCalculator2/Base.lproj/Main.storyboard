@@ -194,7 +194,7 @@
             </objects>
             <point key="canvasLocation" x="1876" y="131.78410794602701"/>
         </scene>
-        <!--Main View Controller-->
+        <!--Tip Calculator-->
         <scene sceneID="GAe-qd-F0J">
             <objects>
                 <viewController id="axl-cS-mvm" customClass="MainViewController" customModule="TipCalculator2" customModuleProvider="target" sceneMemberID="viewController">
@@ -425,6 +425,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="HLA-sY-uxy"/>
                     </view>
+                    <navigationItem key="navigationItem" title="Tip Calculator" id="d33-wL-6Lv" userLabel="Tip Calculator">
+                        <barButtonItem key="rightBarButtonItem" title="Return" id="XQW-Lv-EFn">
+                            <connections>
+                                <action selector="returnBarPressed:" destination="axl-cS-mvm" id="8iZ-ip-b6Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="postTaxField" destination="Pbz-iW-C7F" id="i4H-b8-Dnh"/>
                         <outlet property="preTaxField" destination="yUr-7a-XPc" id="kbd-Mb-uAt"/>
