@@ -8,22 +8,28 @@
 
 /* Begin PBXBuildFile section */
 		BA416066204E2DE9004D3BD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA416065204E2DE9004D3BD2 /* AppDelegate.swift */; };
-		BA416068204E2DE9004D3BD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA416067204E2DE9004D3BD2 /* ViewController.swift */; };
+		BA416068204E2DE9004D3BD2 /* PreTaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA416067204E2DE9004D3BD2 /* PreTaxViewController.swift */; };
 		BA41606B204E2DE9004D3BD2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA416069204E2DE9004D3BD2 /* Main.storyboard */; };
 		BA41606E204E2DE9004D3BD2 /* TipCalculator2.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = BA41606C204E2DE9004D3BD2 /* TipCalculator2.xcdatamodeld */; };
 		BA416070204E2DE9004D3BD2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BA41606F204E2DE9004D3BD2 /* Assets.xcassets */; };
 		BA416073204E2DE9004D3BD2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BA416071204E2DE9004D3BD2 /* LaunchScreen.storyboard */; };
+		BA41607D204E3381004D3BD2 /* TaxViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41607C204E3381004D3BD2 /* TaxViewController.swift */; };
+		BA41607F204E3455004D3BD2 /* SplitViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA41607E204E3455004D3BD2 /* SplitViewController.swift */; };
+		BA416081204E3726004D3BD2 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BA416080204E3726004D3BD2 /* MainViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		BA416062204E2DE9004D3BD2 /* TipCalculator2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TipCalculator2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BA416065204E2DE9004D3BD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		BA416067204E2DE9004D3BD2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		BA416067204E2DE9004D3BD2 /* PreTaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreTaxViewController.swift; sourceTree = "<group>"; };
 		BA41606A204E2DE9004D3BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BA41606D204E2DE9004D3BD2 /* TipCalculator2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TipCalculator2.xcdatamodel; sourceTree = "<group>"; };
 		BA41606F204E2DE9004D3BD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BA416072204E2DE9004D3BD2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BA416074204E2DE9004D3BD2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BA41607C204E3381004D3BD2 /* TaxViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaxViewController.swift; sourceTree = "<group>"; };
+		BA41607E204E3455004D3BD2 /* SplitViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SplitViewController.swift; sourceTree = "<group>"; };
+		BA416080204E3726004D3BD2 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,8 +63,11 @@
 			isa = PBXGroup;
 			children = (
 				BA416065204E2DE9004D3BD2 /* AppDelegate.swift */,
-				BA416067204E2DE9004D3BD2 /* ViewController.swift */,
+				BA416067204E2DE9004D3BD2 /* PreTaxViewController.swift */,
+				BA41607C204E3381004D3BD2 /* TaxViewController.swift */,
 				BA416069204E2DE9004D3BD2 /* Main.storyboard */,
+				BA416080204E3726004D3BD2 /* MainViewController.swift */,
+				BA41607E204E3455004D3BD2 /* SplitViewController.swift */,
 				BA41606F204E2DE9004D3BD2 /* Assets.xcassets */,
 				BA416071204E2DE9004D3BD2 /* LaunchScreen.storyboard */,
 				BA416074204E2DE9004D3BD2 /* Info.plist */,
@@ -139,8 +148,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BA416068204E2DE9004D3BD2 /* ViewController.swift in Sources */,
+				BA41607F204E3455004D3BD2 /* SplitViewController.swift in Sources */,
+				BA416068204E2DE9004D3BD2 /* PreTaxViewController.swift in Sources */,
 				BA416066204E2DE9004D3BD2 /* AppDelegate.swift in Sources */,
+				BA416081204E3726004D3BD2 /* MainViewController.swift in Sources */,
+				BA41607D204E3381004D3BD2 /* TaxViewController.swift in Sources */,
 				BA41606E204E2DE9004D3BD2 /* TipCalculator2.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +292,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TipCalculator2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miaomiao.TipCalculator2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -294,6 +307,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = TipCalculator2/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.miaomiao.TipCalculator2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
