@@ -10,21 +10,28 @@ import UIKit
 
 class MainViewController: UIViewController, UITextFieldDelegate {
     
+    //MARK: Properties
     @IBOutlet weak var preTaxField: UITextField!
     @IBOutlet weak var taxField: UITextField!
     @IBOutlet weak var postTaxField: UITextField!
     @IBOutlet weak var splitByPeopleField: UITextField!
     @IBOutlet weak var tipButton: UIButton!
-    @IBOutlet weak var tipsLabel: UILabel!
-    @IBOutlet weak var totalLabel: UILabel!
+    @IBOutlet weak var tipsPerPersonLabel: UILabel!
+    @IBOutlet weak var totalPerPersonLabel: UILabel!
+    @IBOutlet weak var tipsForAllLAbel: UILabel!
+    @IBOutlet weak var totalForAllLabel: UILabel!
     
+    
+    //MARK: Declare vatiable
     var preTaxAmountInput: Double = 0.00
     var taxAmountInput: Double = 0.00
     var postTaxAmount: Double = 0.00
     var splitPersonInput: Double = 1
     var selectedTip: Double = 0
-    var tips: Double = 0.00
-    var total: Double = 0.00
+    var tipsPerPerson: Double = 0.00
+    var totalPerPerson: Double = 0.00
+    var tipsForAll: Double = 0.00
+    var totalForAll: Double = 0.00
     
     let defaults = UserDefaults.standard
     
@@ -36,6 +43,7 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         //Load previous stored data
         updateTextFieldForInputs()
         updatePostTax()
+        postTaxField.isEnabled = false
         
         selectedTip = defaults.double(forKey: "defaultTip")
         updateTipsPerc()
@@ -48,8 +56,12 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         taxField.delegate = self
         splitByPeopleField.delegate = self
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(mainViewTapped))
+        view.addGestureRecognizer(tapGesture)
+
     }
     
+    //MARK: Add DoneBar
     func addDoneButtonOnNumpad(_ textField: UITextField) {
         
         let keypadToolbar: UIToolbar = UIToolbar()
@@ -63,6 +75,13 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         print("executed")
         // add a toolbar with a done button above the number pad
         textField.inputAccessoryView = keypadToolbar
+    }
+    
+    //MARK: Declare TextField Function
+    @objc func mainViewTapped() {
+        preTaxField.endEditing(true)
+        taxField.endEditing(true)
+        splitByPeopleField.endEditing(true)
     }
     
     func textFieldDidEndEditing(_ textField: UITextField) {
@@ -96,13 +115,20 @@ class MainViewController: UIViewController, UITextFieldDelegate {
         return true
     }
     
-
+    func triggerAlert() {
+        let alert = UIAlertController(title: "Error", message: "Invalid Input", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: "Input Again", style: .default, handler: { (alert) in
+        }))
+        self.present(alert, animated: true, completion: nil)
+    }
+    
+    
+    //MARK: TipButton / Default Button / Reset Button Pressed
     @IBAction func TipButtonPressed(_ sender: UIButton) {
         selectedTip = selectedTip + tipArray[sender.tag - 1]
         updateTipsPerc()
         
     }
-    
     
     @IBAction func ResetValueButtonPressed(_ sender: UIButton) {
         print(sender.tag)
@@ -115,15 +141,18 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     }
     
     
+    //MARK: Update Tips / Inputs / Output
     func updateTipsPerc() {
         tipButton.setTitle("\(selectedTip)%", for: .normal)
         calculateTipAndTotal()
     }
     
     func updateTextFieldForInputs() {
+        
         preTaxField.text = String(preTaxAmountInput)
         taxField.text = String(taxAmountInput)
-        splitByPeopleField.text = String(splitPersonInput)
+        splitByPeopleField.text = String(round(splitPersonInput))
+        
     }
     
     func updatePostTax() {
@@ -132,22 +161,19 @@ class MainViewController: UIViewController, UITextFieldDelegate {
     }
     
     func calculateTipAndTotal() {
-        
-        tips = Double(round(preTaxAmountInput * selectedTip / splitPersonInput) / 100)
-        total = Double(round(postTaxAmount / splitPersonInput * 100) / 100) + tips
-        tipsLabel.text = " Tips: \(tips)"
-        totalLabel.text = " Total: \(total)"
+        tipsForAll = Double(round(preTaxAmountInput * selectedTip) / 100)
+        tipsPerPerson = Double(round(tipsForAll / splitPersonInput * 100) / 100)
+        totalPerPerson = Double(round(postTaxAmount / splitPersonInput * 100) / 100) + tipsPerPerson
+        totalForAll = Double(postTaxAmount + tipsForAll)
+        tipsPerPersonLabel.text = " Tips Per Person: \(tipsPerPerson)"
+        totalPerPersonLabel.text = " Total Per Person: \(totalPerPerson)"
+        tipsForAllLAbel.text = " Tips For All: \(tipsForAll)"
+        totalForAllLabel.text = " Total For All: \(totalForAll)"
         
     }
     
-    func triggerAlert() {
-        let alert = UIAlertController(title: "Error", message: "Invalid Input", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Input Again", style: .default, handler: { (alert) in
-        }))
-        self.present(alert, animated: true, completion: nil)
-    }
     
-    
+    //MARK: Return to RootPage
     @IBAction func returnBarPressed(_ sender: UIBarButtonItem) {
         guard navigationController?.popToRootViewController(animated: true) != nil
             else {

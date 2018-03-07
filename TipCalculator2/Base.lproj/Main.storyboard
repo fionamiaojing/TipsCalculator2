@@ -45,7 +45,7 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-a2-33E">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="0jb-a2-33E">
                                         <rect key="frame" x="0.0" y="106.5" width="375" height="87"/>
                                         <color key="textColor" red="1" green="0.80732282614290551" blue="0.80121449366536135" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
@@ -65,7 +65,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="0.93597334623336792" green="0.70826256275177002" blue="0.73932892084121704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dvE-sR-OCy" secondAttribute="trailing" id="2Nf-H4-8Hb"/>
                             <constraint firstItem="dvE-sR-OCy" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="ChB-Cn-RHG"/>
@@ -102,7 +102,7 @@
                                         <color key="textColor" red="0.99999600649999998" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="right" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LT0-nC-J7D">
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="LT0-nC-J7D">
                                         <rect key="frame" x="0.0" y="106.5" width="375" height="87"/>
                                         <color key="textColor" red="1" green="0.80732282609999995" blue="0.80121449369999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                         <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="40"/>
@@ -122,7 +122,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.80732282609999995" blue="0.80121449369999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="IZD-wk-3Ja" firstAttribute="trailing" secondItem="gXE-5f-VCL" secondAttribute="trailing" id="7xB-Te-kwD"/>
                             <constraint firstItem="gXE-5f-VCL" firstAttribute="centerX" secondItem="5IU-Zu-ER8" secondAttribute="centerX" id="Zdn-CG-VpL"/>
@@ -178,7 +178,7 @@
                                 </constraints>
                             </stackView>
                         </subviews>
-                        <color key="backgroundColor" red="1" green="0.80732282609999995" blue="0.80121449369999997" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="backgroundColor" red="0.93725490196078431" green="0.70980392156862748" blue="0.74117647058823533" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="1I5-lD-2uV" firstAttribute="centerX" secondItem="9kY-oZ-s0L" secondAttribute="centerX" id="0mT-sW-pU9"/>
                             <constraint firstItem="1I5-lD-2uV" firstAttribute="trailing" secondItem="yDW-Nw-1h3" secondAttribute="trailing" id="1lK-zF-P9K"/>
@@ -293,10 +293,10 @@
                                 </constraints>
                             </stackView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="top" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="hNR-KE-FA2" userLabel="Lower Stack View">
-                                <rect key="frame" x="10" y="284" width="355" height="273"/>
+                                <rect key="frame" x="10" y="284" width="355" height="316"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="5" translatesAutoresizingMaskIntoConstraints="NO" id="F8R-nZ-iXx" userLabel="Tip Perc Stack View">
-                                        <rect key="frame" x="0.0" y="0.0" width="355" height="126.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="355" height="148"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" TIP %" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="09U-no-QSW">
                                                 <rect key="frame" x="0.0" y="0.0" width="355" height="40.5"/>
@@ -364,10 +364,10 @@
                                                 </constraints>
                                             </stackView>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gga-BU-nWV">
-                                                <rect key="frame" x="0.0" y="91.5" width="355" height="35"/>
+                                                <rect key="frame" x="0.0" y="91.5" width="355" height="56.5"/>
                                                 <subviews>
                                                     <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1GS-09-ltm">
-                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="35"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="172.5" height="56.5"/>
                                                         <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="20"/>
                                                         <state key="normal" title=" Set As Default">
                                                             <color key="titleShadowColor" cocoaTouchSystemColor="lightTextColor"/>
@@ -377,7 +377,7 @@
                                                         </connections>
                                                     </button>
                                                     <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kX2-vM-Imq">
-                                                        <rect key="frame" x="182.5" y="0.0" width="172.5" height="35"/>
+                                                        <rect key="frame" x="182.5" y="0.0" width="172.5" height="56.5"/>
                                                         <fontDescription key="fontDescription" name="Georgia-Italic" family="Georgia" pointSize="20"/>
                                                         <state key="normal" title="Reset to 0%">
                                                             <color key="titleShadowColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -394,21 +394,35 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="H9T-nl-lsj" userLabel="Result Stack View">
-                                        <rect key="frame" x="0.0" y="146.5" width="355" height="126.5"/>
+                                        <rect key="frame" x="0.0" y="168" width="355" height="148"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2Q-mF-1qM">
-                                                <rect key="frame" x="0.0" y="0.0" width="355" height="58.5"/>
-                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
-                                                <color key="textColor" red="0.99607843139999996" green="0.59999999999999998" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tipsPerP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s2Q-mF-1qM">
+                                                <rect key="frame" x="0.0" y="0.0" width="355" height="29.5"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                                <color key="textColor" red="0.9488364461203046" green="0.60491360190000554" blue="0.4604868947900046" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nu-BR-Tb4">
-                                                <rect key="frame" x="0.0" y="68.5" width="355" height="58"/>
-                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="30"/>
-                                                <color key="textColor" red="0.99607843139999996" green="0.59999999999999998" blue="0.6705882353" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalPerP" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="1nu-BR-Tb4">
+                                                <rect key="frame" x="0.0" y="39.5" width="355" height="29.5"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                                <color key="textColor" red="0.94883644609999995" green="0.60491360189999999" blue="0.46048689479999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                                 <nil key="highlightedColor"/>
                                                 <color key="shadowColor" white="1" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="tipsForAll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="akP-u4-u7Y">
+                                                <rect key="frame" x="0.0" y="79" width="355" height="29.5"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                                <color key="textColor" red="0.93396493596802033" green="0.51556111001712868" blue="0.67733409381010334" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="totalForAll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4sh-Iw-8S2">
+                                                <rect key="frame" x="0.0" y="118.5" width="355" height="29.5"/>
+                                                <fontDescription key="fontDescription" name="Georgia-Bold" family="Georgia" pointSize="25"/>
+                                                <color key="textColor" red="0.93396493599999997" green="0.51556111000000004" blue="0.67733409379999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                                <nil key="highlightedColor"/>
+                                                <color key="shadowColor" cocoaTouchSystemColor="lightTextColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
@@ -445,8 +459,10 @@
                         <outlet property="splitByPeopleField" destination="HJR-pU-Gql" id="nVP-uf-dnr"/>
                         <outlet property="taxField" destination="INJ-IL-ZC2" id="Apv-q9-4Sb"/>
                         <outlet property="tipButton" destination="QdL-16-PJe" id="dDd-Fp-SZa"/>
-                        <outlet property="tipsLabel" destination="s2Q-mF-1qM" id="dm4-DY-RXE"/>
-                        <outlet property="totalLabel" destination="1nu-BR-Tb4" id="6Tw-T3-xvU"/>
+                        <outlet property="tipsForAllLAbel" destination="akP-u4-u7Y" id="2DS-Ft-sP9"/>
+                        <outlet property="tipsPerPersonLabel" destination="s2Q-mF-1qM" id="dm4-DY-RXE"/>
+                        <outlet property="totalForAllLabel" destination="4sh-Iw-8S2" id="qmh-t1-Qut"/>
+                        <outlet property="totalPerPersonLabel" destination="1nu-BR-Tb4" id="6Tw-T3-xvU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8Dt-6x-GLj" userLabel="First Responder" sceneMemberID="firstResponder"/>

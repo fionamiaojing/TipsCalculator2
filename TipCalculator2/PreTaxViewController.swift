@@ -24,6 +24,9 @@ class PreTaxViewController: UIViewController, UITextFieldDelegate {
         NextButton.isEnabled = false
         PreTaxTextField.delegate = self
         
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(viewTapped))
+        view.addGestureRecognizer(tapGesture)
+        
     }
 
     func textFieldDidBeginEditing(_ textField: UITextField) {
@@ -33,6 +36,11 @@ class PreTaxViewController: UIViewController, UITextFieldDelegate {
     func textFieldShouldReturn(_ textField: UITextField) -> Bool {
         textField.resignFirstResponder()
         return true
+    }
+    
+    @objc func viewTapped() {
+        PreTaxTextField.endEditing(true)
+        
     }
     
     func addDoneButtonOnNumpad(_ textField: UITextField) {
